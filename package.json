@@ -1,0 +1,33 @@
+{
+  "name": "objectx-ai-cli",
+  "version": "0.1.0",
+  "description": "CLI tool to manage AI skills, workflows and rules",
+  "main": "dist/index.js",
+  "bin": {
+    "aimat": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "@types/figlet": "^1.7.0",
+    "boxen": "^8.0.1",
+    "commander": "^12.0.0",
+    "figlet": "^1.11.0",
+    "fs-extra": "^11.2.0",
+    "picocolors": "^1.0.1",
+    "simple-git": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
